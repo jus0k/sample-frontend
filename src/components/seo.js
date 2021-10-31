@@ -128,13 +128,17 @@ const query = graphql`
     strapiGlobal {
       siteName
       favicon {
-        publicURL
+        localFile {
+          publicURL
+        }
       }
       defaultSeo {
         metaTitle
         metaDescription
         shareImage {
-          publicURL
+          localFile {
+            publicURL
+          }
         }
       }
     }
